@@ -1,0 +1,11 @@
+name: remote triggered workflow prod
+on:
+  repository_dispatch:
+    types: [prod]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "Hello World to prod"

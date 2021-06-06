@@ -1,3 +1,4 @@
+name: remote triggered workflow
 on:
   repository_dispatch:
     types: [dev]
